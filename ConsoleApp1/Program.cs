@@ -8,5 +8,26 @@
 
             
         }
+
+        static string[] FilterStrings(string[] array)
+        {        
+            string[] filteredArray = new string[array.Length];
+            int count = 0;        
+            foreach (string str in array)
+            {
+                
+                if (str.Length <= 3)
+                {                   
+                    filteredArray[count] = str;
+                    count++;
+                }
+            }           
+            string[] resultArray = new string[count];
+            for (int i = 0; i < count; i++)
+            {
+                resultArray[i] = filteredArray[i];
+            }
+            return resultArray;
+        }
     }
 }
