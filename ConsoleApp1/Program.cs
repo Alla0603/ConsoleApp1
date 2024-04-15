@@ -6,7 +6,12 @@
         {
             string[] inputArray = { "apple", "banana", "cat", "dog", "elephant", "fo", "goat" };
 
+            string[] resultArray = FilterStrings(inputArray);
             
+            Console.WriteLine("Исходный массив:");
+            PrintArray(inputArray);
+            Console.WriteLine("\nОтфильтрованный массив:");
+            PrintArray(resultArray);
         }
 
         static string[] FilterStrings(string[] array)
